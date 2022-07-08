@@ -1,0 +1,18 @@
+server:
+  port: 8888 #Tomcat端口
+
+dubbo:
+  registry:
+    address: zookeeper://localhost #zookeeper地址
+    port: 2181
+    timeout: 10000
+    check: true #注册中心启动时检查 (注册订阅失败时报错)
+  protocol:
+    name: dubbo
+    serialization: dubbo
+  scan:
+    base-packages: com.athy.controller
+  application:
+    name: mydubboconsumer
+  consumer:
+    check: false #所有的接口没有没有provide提供服务
