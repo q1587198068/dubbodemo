@@ -12,6 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by Administrator on 2022/7/7.
  */
+//这里直接注入spring并且暴露接口实现类
 @Service("myDubboService")
 @DubboService(version = "1.0.0",timeout = 3000)
 public class MyDubboServiceImpl implements MyDubboService{

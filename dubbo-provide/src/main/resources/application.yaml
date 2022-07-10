@@ -3,15 +3,18 @@ server:
 
 dubbo:
   application:
+    #指定当前服务的名字（同样的服务名字相同，不要和别的服务重名）
     name: the-provide
   registry:
     address: zookeeper://localhost #zookeeper地址
     port: 2181
     timeout: 5000 #提供注册的端口
   protocol:
+    #provide和consumer通讯用的协议名字、端口号
     name: dubbo
     port: 20890
   scan:
+    #指定dubbo扫描的包，包下的类我们用@DubboService注解暴露
     base-packages: com.athy.Service.Impl
 
 

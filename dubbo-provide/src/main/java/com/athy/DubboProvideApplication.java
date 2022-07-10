@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.concurrent.CountDownLatch;
 
 @SpringBootApplication
-@EnableDubbo
+@EnableDubbo//开启基于注解的dubbo功能
 public class DubboProvideApplication {
 
 	public static void main(String[] args) {
