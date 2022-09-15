@@ -36,6 +36,7 @@ public class MyDubboServiceImpl implements MyDubboService{
         for (int i = 0; i <users.size() ; i++) {
             User user = users.get(i);
             if(id.equals(user.getId())){
+                System.out.println(user.toString());
                 return user;
             }
         }

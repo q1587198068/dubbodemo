@@ -1,5 +1,5 @@
 server:
-  port: 8080 #Tomcat端口
+  port: 9999 #Tomcat端口
 
 dubbo:
   application:

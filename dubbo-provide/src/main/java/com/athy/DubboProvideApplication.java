@@ -18,12 +18,12 @@ public class DubboProvideApplication {
 
 		//ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:spring/*.xml"});
 	//context.start();
-			try {
+	/*		try {
 			System.out.println("DubboProvideApplication await");
 			new CountDownLatch(1).await();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 }

@@ -16,3 +16,4 @@ dubbo:
     base-packages: com.athy.controller,com.athy.service.impl #扫描的包
   consumer:
     check: false #检查有没有provide提供服务
+    retries: 2 #配置dubbo服务重试次数.
