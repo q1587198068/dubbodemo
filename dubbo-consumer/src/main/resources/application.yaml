@@ -1,5 +1,7 @@
 server:
   port: 8888 #Tomcat端口
+  servlet:
+    context-path: /dubbo #添加项目访问前置路径
 
 dubbo:
   application:
@@ -8,7 +10,7 @@ dubbo:
     address: zookeeper://localhost #zookeeper地址
     port: 2181
     timeout: 10000
-    check: true #注册中心启动时检查 (注册订阅失败时报错)
+    check: false #注册中心启动时检查 (注册订阅失败时报错)
   protocol:
     name: dubbo #协议
     #serialization: dubbo
