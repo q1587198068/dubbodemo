@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<a th:text="${msg}"></a>
+<form action="/dubbo/login/tologin" method="post">
+    账号：<input type="text" name="username"/>
+    密码：<input type="text" name="password"/>
+    <input type="submit" value="提交">
+</form>
+
+
+</body>
+
+<script>
+
+
+</script>
+</html>

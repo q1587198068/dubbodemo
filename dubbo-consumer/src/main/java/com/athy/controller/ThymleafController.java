@@ -11,7 +11,7 @@ public class ThymleafController {
 
     @RequestMapping("/gotoThym")
     public String gotoThym(Model model) {
-
+//thymleaf模板直接访问tempkates下的HTML
         model.addAttribute("user_name", "zhangsansan");
         return "test";
     }
