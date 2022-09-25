@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * 1.配置好拦截器拦截那些请求
  * 2.把拦截器配置在容器中
  */
+
 public class LoginInterceptor implements HandlerInterceptor {
 
     /**
@@ -41,7 +42,7 @@ public class LoginInterceptor implements HandlerInterceptor {
     }
 
     /**
-     *
+     *目标方法执行之后执行
      * @param request
      * @param response
      * @param handler
@@ -53,6 +54,16 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     }
 
+    /**
+     * 最后执行
+     * 如果所有拦截器都执行成功的话  会倒叙执行所有拦截器的afterCompletion()
+     * 如果有一个拦截器执行失败  会调用之前执行成功的拦截器的afterCompletion()
+     * @param request
+     * @param response
+     * @param handler
+     * @param ex
+     * @throws Exception
+     */
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 

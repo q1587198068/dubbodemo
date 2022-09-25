@@ -5,6 +5,7 @@
     <title>登录页面</title>
 </head>
 <body>
+<!--/*@thymesVar id="msg" type=""*/-->
 <a th:text="${msg}"></a>
 <form action="/dubbo/login/tologin" method="post">
     账号：<input type="text" name="username"/>
